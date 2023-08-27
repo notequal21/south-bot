@@ -1,0 +1,126 @@
+.header {
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  width: 100%;
+
+  .con {
+    position: relative;
+  }
+
+  &Body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+      cursor: pointer;
+      color: #000;
+      font-family: Noto Sans;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 25.5px;
+
+      @media (max-width: 1200px) {
+        font-size: 24px;
+      }
+
+      &:not(:first-child) {
+        margin: 0 0 0 20px;
+      }
+    }
+
+    &__btn {
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      margin: 0 0 0 30px;
+      height: 64px;
+      padding: 0 16px;
+      border-radius: 31px;
+      border: 3px solid #ff4100;
+
+      color: #000;
+      font-family: Noto Sans;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+
+      @media (max-width: 1200px) {
+        font-size: 24px;
+        height: 54px;
+      }
+    }
+  }
+
+  &__burger {
+    position: relative;
+    z-index: 2;
+    margin: 0 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1.875px solid #ff4100;
+  }
+
+  &Menu {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    padding: 28px 25px;
+
+    border-radius: 15px;
+    background: #fff;
+
+    transform: scale(0.2);
+    transition: all 0.4s ease;
+    transform-origin: right top;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    &.open {
+      transform: scale(1);
+      opacity: 1;
+      pointer-events: unset;
+      visibility: visible;
+    }
+
+    &__item {
+      color: #000;
+      font-family: Noto Sans;
+      font-size: 24.949px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 19.881px;
+
+      &:not(:first-child) {
+        margin: 24px 0 0;
+      }
+    }
+
+    &__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      margin: 25px 0 0;
+      padding: 0 12px;
+
+      border-radius: 24.169px;
+      border: 2.339px solid #ff4100;
+
+      color: #000;
+      font-family: Noto Sans;
+      font-size: 24.949px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 18.712px;
+    }
+  }
+}

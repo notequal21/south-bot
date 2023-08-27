@@ -1,0 +1,129 @@
+.main {
+  position: relative;
+
+  &__bg {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+
+      &:nth-child(2) {
+        display: none;
+      }
+
+      @media (max-width: 767px) {
+        &:nth-child(1) {
+          display: none;
+        }
+        &:nth-child(2) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .con {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &Body {
+    display: flex;
+    position: absolute;
+    top: 78px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    &__plate {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 304px;
+      height: 370px;
+
+      @media (max-width: 1200px) {
+        width: 200px;
+        height: auto;
+      }
+
+      @media (max-width: 767px) {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &__col {
+      padding: 90px 0 0;
+
+      @media (max-width: 1200px) {
+        padding: 30px 0 0;
+      }
+
+      @media (max-width: 767px) {
+        padding: 0;
+      }
+
+      &:not(:first-child) {
+        margin: 0 0 0 340px;
+
+        @media (max-width: 1200px) {
+          margin: 0 0 0 300px;
+        }
+
+        @media (max-width: 767px) {
+          margin: 0 0 0 18px;
+        }
+      }
+    }
+
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 190px;
+      height: 60px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      background: #ff4100;
+      box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+
+      color: #fff;
+      text-align: center;
+      font-family: Noto Sans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 25.5px;
+
+      @media (max-width: 1200px) {
+        width: 160px;
+        height: 50px;
+        font-size: 16px;
+      }
+
+      @media (max-width: 767px) {
+        width: 105px;
+        height: 32px;
+        font-size: 11px;
+      }
+
+      &:not(:first-child) {
+        margin: 65px 0 0;
+
+        @media (max-width: 1200px) {
+          margin: 40px 0 0;
+        }
+
+        @media (max-width: 767px) {
+          margin: 12px 0 0;
+        }
+      }
+    }
+  }
+}

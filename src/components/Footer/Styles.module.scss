@@ -1,0 +1,138 @@
+.footer {
+  padding: 50px 0 70px;
+
+  @media (max-width: 767px) {
+    padding: 20px 0;
+  }
+
+  &__title {
+    color: #fff;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 59.85px;
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+      line-height: 59.85px;
+    }
+  }
+
+  &__text {
+    margin: 20px 0 0;
+
+    color: #fff;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31.96px;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &Links {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 0;
+
+    @media (max-width: 767px) {
+      margin: 20px 0 0;
+    }
+
+    &__item {
+      color: #fff;
+      text-align: center;
+      font-family: Noto Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 21px;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 14px;
+        width: 48px;
+        height: 48px;
+        background-color: #fd9400;
+        border-radius: 8px;
+      }
+
+      &:not(:first-child) {
+        margin: 0 0 0 80px;
+
+        @media (max-width: 767px) {
+          margin: 0 0 0 35px;
+        }
+      }
+    }
+  }
+
+  &__plate {
+    margin: 34px auto 0;
+    max-width: 122px;
+
+    @media (max-width: 767px) {
+      margin: 10px auto 0;
+      max-width: 56px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &Info {
+    margin: 40px 0 0;
+
+    @media (max-width: 767px) {
+      margin: 12px 0 0;
+    }
+
+    &__item {
+      color: #fff;
+      text-align: center;
+      font-family: Noto Sans;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 25.5px;
+
+      &:not(:first-child) {
+        margin: 3px 0 0;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 1;
+      }
+    }
+  }
+
+  &__cr {
+    margin: 30px 0 0;
+    color: #fff;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28.2px;
+    letter-spacing: -0.15px;
+
+    @media (max-width: 767px) {
+      margin: 12px 0 0;
+      font-size: 13px;
+      line-height: 1;
+    }
+  }
+}
