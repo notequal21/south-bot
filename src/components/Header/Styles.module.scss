@@ -66,6 +66,20 @@
     height: 40px;
     border-radius: 50%;
     border: 1.875px solid #ff4100;
+
+    svg {
+      path {
+        transition: all 0.3s ease;
+      }
+    }
+
+    &.open {
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
   }
 
   &Menu {
@@ -75,7 +89,7 @@
     padding: 28px 25px;
 
     border-radius: 15px;
-    background: #fff;
+    background: #000000;
 
     transform: scale(0.2);
     transition: all 0.4s ease;
@@ -92,7 +106,7 @@
     }
 
     &__item {
-      color: #000;
+      color: #ffffff;
       font-family: Noto Sans;
       font-size: 24.949px;
       font-style: normal;
@@ -115,7 +129,7 @@
       border-radius: 24.169px;
       border: 2.339px solid #ff4100;
 
-      color: #000;
+      color: #ffffff;
       font-family: Noto Sans;
       font-size: 24.949px;
       font-style: normal;

@@ -2,8 +2,8 @@ import { useMediaQuery } from 'usehooks-ts';
 import style from './Styles.module.scss';
 import img from './assets/img.png';
 import img2x from './assets/img@2x.png';
-import imgMobile from './assets/img-mobile.png';
-import imgMobile2x from './assets/img-mobile@2x.png';
+import imgMobile from './assets/img-mobile.jpg';
+import imgMobile2x from './assets/img-mobile@2x.jpg';
 
 const TokenomicsSection = () => {
   const isMobile = useMediaQuery('(max-width:767px)');
